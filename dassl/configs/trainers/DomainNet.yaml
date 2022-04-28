@@ -1,0 +1,13 @@
+DATALOADER:
+  NUM_WORKERS: 8
+  TRAIN_X:
+    SAMPLER: 'RandomDomainSampler'
+    BATCH_SIZE: 65
+  TEST:
+    BATCH_SIZE: 64
+
+OPTIM:
+  NAME: 'sgd'
+  LR: 0.002
+  MAX_EPOCH: 15
+  LR_SCHEDULER: 'cosine'
